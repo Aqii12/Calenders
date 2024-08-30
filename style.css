@@ -181,3 +181,47 @@ button{
 .calendar .hide{
     display: none;
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .clock .time {
+        font-size: 2.5rem;
+    }
+
+    .calendar .show .header {
+        font-size: 1.2rem;
+    }
+
+    .calendar .show ul {
+        grid-template-columns: repeat(7, minmax(35px, 1fr));
+    }
+
+    .calendar .show ul li {
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock .time {
+        font-size: 2rem;
+    }
+
+    .calendar .show .header {
+        font-size: 1rem;
+    }
+
+    .calendar .show ul {
+        grid-template-columns: repeat(7, minmax(30px, 1fr));
+    }
+
+    .calendar .show ul li {
+        height: 30px;
+        line-height: 30px;
+    }
+}
